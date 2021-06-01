@@ -1,13 +1,13 @@
 // O(n) time, O(n) space
 // returns values
 function twoNumberSum(array, targetSum) {
-    const nums = {};
+    const map = {};
     for (const num of array){
         const potentialMatch = targetSum - num;
-        if (potentialMatch in nums){
+        if (potentialMatch in map){
             return [potentialMatch, num];
         }else{
-            nums[num] = true;
+            map[num] = true;
         }
     }
     return [];
