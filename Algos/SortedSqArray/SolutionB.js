@@ -1,3 +1,5 @@
+// O(n) time | O(n) space;
+
 function sortedSquaredArray(array) {
     var arr = array.map(x => x);
     var smallerIdx = 0;
